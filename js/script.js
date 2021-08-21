@@ -67,5 +67,8 @@ function townSelector(event) {
   if (event.target.value !== "0") {
     drawCards(event.target.value);
   }
+  if (event.target.value === "0") {
+    card.hidden = true;
+  }
 }
 
