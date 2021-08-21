@@ -52,7 +52,6 @@ async function getWeather(queryValue) {
 
 async function drawCards(resp) {
   let data = await getWeather(resp);
-  console.log(data)
   return fillCard(data);
 }
 
