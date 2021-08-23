@@ -8,6 +8,13 @@ function addOptions(){
         option.text = array[item];
         citys.appendChild(option);
     }
+    if(citys[0]){
+        let card = document.querySelector('.card');
+        card.style.display = 'none';
+    } else {
+        let card = document.querySelector('.card');
+        card.style.display = 'flex';
+    }
 }
 addOptions();
 
